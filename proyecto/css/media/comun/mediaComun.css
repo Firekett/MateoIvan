@@ -1,0 +1,21 @@
+/* Header */
+
+@media (max-width: 1430px) {
+    header div:nth-child(2) {
+        height: 300px;
+    }
+    
+    header div:first-child {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1350px) {    
+    nav div div.dropdown {
+        width: 140%;
+    }
+    
+    nav div div.dropdown a img {
+        margin-left: 20px;
+    }
+}

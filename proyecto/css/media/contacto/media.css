@@ -1,0 +1,13 @@
+
+@media (max-width: 1665px) {    
+    section div#encuesta form input {
+        flex-basis: 46%;
+    }
+}
+
+@media (max-width: 1250px) {
+    section div#encuesta form input {
+        flex-basis: 45%;
+    }
+}
+

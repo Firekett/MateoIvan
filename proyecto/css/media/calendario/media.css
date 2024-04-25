@@ -1,0 +1,24 @@
+@media (max-width: 1850px) {
+    section div div table tr td.ocupado div.eventoDrop {
+        top: 132%;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1700px) {
+    aside#izquierda div ul li {
+        width: 15%;
+    }
+
+    section div div table tr td.ocupado div.eventoDrop {
+        top: 135%;
+    }
+}
+
+
+@media (max-width: 1430px) {
+    section div div table tr td.ocupado div.eventoDrop {
+        top: 115%;
+    }
+}
+

@@ -1,0 +1,236 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* ************************* */
+/*          Cabecera */
+/* ************************* */
+
+header {
+	height: 10%;
+	width: 100%;
+	margin: 0%;
+	text-shadow: 5px 5px 10px black;
+}
+
+header div:first-child {
+	position: absolute;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: Helvetica;
+	letter-spacing: 2px;
+}
+
+header div:nth-child(2) {
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}
+
+header div img {
+	width: 100%;
+}
+
+/* ************************* */
+/*     Menu principal */
+/* ************************* */
+
+nav {
+	background-color: #177e89;
+	width: 100%;
+	height: 83px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	position: sticky;
+	top: 0%;
+	left: 0%;
+	z-index: 10;
+}
+
+
+nav div {
+	height: 100%;
+	width: 10%;
+	text-align: center;
+	text-transform: capitalize;
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+
+nav div p {
+	width: 170%;
+	text-align: center;
+	font-size: 28px;
+	padding: 25px;
+	background-color: #177e89;
+}
+
+/* Menú desplegable */
+nav div div.dropdown {
+	display: inline-block;
+	position: relative;
+	background-color: white;
+	width: 120%;
+	height: fit-content;
+	font-size: 1px;
+	top: -90%;
+	z-index: -1;
+	transition: all 2s;
+}
+nav div p a {
+	text-decoration: none;
+	color: white;
+}
+
+nav div div.dropdown a {
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+nav div div.dropdown a img {
+	width: 10%;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	float: left;
+	transition: 1s;
+}
+
+
+/* Hover menu
+	Aparece el menu desplegable */
+	
+nav div:hover div.dropdown {
+	top: 4%;
+	height: fit-content;
+	box-shadow: 0px 0px 10px black;
+	font-size: 18px;
+	transition: 1s;
+}
+
+nav div:hover div.dropdown a img {
+	width: 12%;
+	transition: 1s;
+}
+
+
+nav div div.dropdown a:hover {
+	text-decoration: underline;
+	transition: 3s;
+}
+
+/* ************************* */
+/*  Flecha para subir arriba de la pagina*/
+/* ************************* */
+
+section div#flecha {
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	width: 3%;
+	float: right;
+}
+
+section div#flecha img {
+	width: 100%;
+}
+
+/* ************************* */
+/*          Footer */
+/* ************************* */
+
+footer {
+	width: 100%;
+	background-color: #177e89;
+	margin-top: 5%;
+	height: 200px;
+}
+
+/* Parte izquierda */
+
+footer div#redesSS {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+}
+
+footer div#redesSS div.barra {
+	width: 42.5%;
+	height: 5px;
+	background-color: #70a9af;
+	transition: 3s;
+}
+
+footer div#redesSS div#redes {
+	width: 8%;
+	margin-left: 1%;
+}
+
+footer div#redesSS div#redes img {
+	width: 29%;
+	margin: 0px auto;
+}
+
+/* Hover cuando posiciono encima de los iconos de redes sociales */
+footer div#redesSS:hover div.barra {
+	width: 5%;
+	transition: 3s;
+}
+
+/* Contenido del footer*/
+
+footer div#contenido {
+	padding-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer div#contenido div {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div#contenido div div {
+	width: 10%;
+}
+
+footer div#contenido div div img {
+	width: 100%;
+}
+
+footer div#contenido div p {
+	color: white;
+	padding: 10px;
+}
+
+footer div#contenido div:nth-child(2) p {
+	padding: 6px;
+}
+
+footer div#contenido div p a {
+	text-decoration: none;
+	color: white;
+}
+
+footer div#contenido div p a:hover {
+	color: black;
+}

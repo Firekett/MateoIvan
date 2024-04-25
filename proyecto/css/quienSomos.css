@@ -1,0 +1,172 @@
+
+/*  Cabecera especial para esta pagina*/
+
+header div:first-child {
+    top: 20%;
+    left: 10%;
+}
+
+/* Separo todo del nav y header */
+
+section {
+    margin-top: 120px;
+}
+
+/* ***********************/
+/* Texto  */
+/* ***********************/
+
+section div#presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0px auto;
+}
+
+section div#presentacion div {
+    width: 40%;
+    margin: 3%;
+    overflow: hidden;
+}
+
+section div#presentacion div img {
+    width: 100%;
+    height: 300px;
+    transition: 2s;
+}
+
+section div#presentacion div:hover img {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+section div#presentacion div div {
+    width: 100%;
+    margin: 15px 0px; 
+}
+
+section div#presentacion div div:hover p {
+    width: 20%;
+    transition: 1s;
+}
+
+section div#presentacion div div p {
+    border-bottom: 2px solid blue;
+    height: fit-content;
+    width: 0%;
+    margin-bottom: 15px;
+    transition: 1s ;
+}
+
+/* ***********************/
+/*  Boton de contacto */
+/* ***********************/
+
+section div#contacta {
+    width: fit-content;
+    background-color: #75cdd6;
+    border: #75cdd6 1px solid;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 100px;
+    margin-bottom: 5%;
+    transition: 0.4s;
+}
+
+section div#contacta a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+section div#contacta:hover {
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+section div#contacta:hover a {
+    transition: 0.4s;
+    color: #75cdd6;
+}
+
+
+/* ************************* */
+/*  Preguntas precuentes*/
+/* ************************* */
+
+section div#preguntas {
+    box-shadow: 0px 0px 20px -5px black;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Cabecera de las preguntas */
+
+section div#preguntas div#titulo {
+    flex-basis: 90%;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+section div#preguntas div#titulo h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section div#preguntas div#titulo p {
+    width: 45%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+/* Preguntas y respuestas */
+
+section div#preguntas div {
+    margin: 5px;
+    flex-basis: 46%;
+}
+
+section div#preguntas div div{
+    background-color: #75cdd6;
+}
+
+section div#preguntas div div p {
+    padding: 20px;
+}
+
+section div#preguntas div div.oculto {
+    display: inline-block;
+    background-color: #DE8F6E; 
+    margin-top: 0px;
+    height: 30px;
+    position: relative;
+    top: -34%;
+    z-index: -1;
+    transition: 2s;
+}
+
+section div#preguntas div div.oculto p {
+    font-size: 8px;
+    padding-top: 0px;
+    transition: 2s;
+}
+
+section div#preguntas div:hover div.oculto p {
+    padding: 20px;
+    font-size: 15px;
+    transition: 1s;
+}
+
+section div#preguntas div:hover div.oculto {
+    top: 0%;
+    height: 100px;
+    transition: 1s;
+}
